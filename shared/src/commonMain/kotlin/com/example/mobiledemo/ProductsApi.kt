@@ -30,7 +30,9 @@ class ProductsApi {
             try {
                 emit(
                     RequestState.Success(
-                        data = httpClient.get(urlString = "${BASE_URL}products?limit=$limit").body()
+                        data = Products(
+                            items = httpClient.get(urlString = "${BASE_URL}products?limit=$limit").body()
+                        )
                     )
                 )
             } catch (e: Exception) {

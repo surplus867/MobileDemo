@@ -42,6 +42,7 @@ android {
 dependencies {
     // Coil Image Loading
     implementation(libs.coil.compose)
+    implementation(libs.androidx.navigation.compose)
 
     implementation(projects.shared)
     implementation(libs.compose.ui)
